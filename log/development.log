@@ -1083,3 +1083,57 @@ Processing by PostsController#create as HTML
   [1m[35m (24.8ms)[0m  commit transaction
 Redirected to http://165.227.31.156:34667/posts/6
 Completed 302 Found in 29ms (ActiveRecord: 25.1ms)
+
+
+Started GET "/posts/6" for 24.84.40.63 at 2018-01-24 13:37:53 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.84.40.63 at 2018-01-24 13:37:53 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:53 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:53 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:53 +0000
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:53 +0000
+
+
+Started GET "/posts/new" for 24.84.40.63 at 2018-01-24 13:37:56 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.84.40.63 at 2018-01-24 13:37:56 +0000
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:56 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:56 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.84.40.63 at 2018-01-24 13:37:56 +0000
+
+
+Started POST "/posts" for 24.84.40.63 at 2018-01-24 13:38:04 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"35T81rSmdvO/7DYbdiZVW/KDmVyGWsqwVamSy2Umy4T0fLbxS1I/RGrynWxuEvVF59i0c27qN+t+vuZskuNEhA==", "title"=>"juyk87i6ryhr", "description"=>"gtewgwg545g5erg", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "juyk87i6ryhr"], ["description", "gtewgwg545g5erg"], ["created_at", "2018-01-24 13:38:04.233254"], ["updated_at", "2018-01-24 13:38:04.233254"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://165.227.31.156:34667/posts/7
+Completed 302 Found in 50ms (ActiveRecord: 2.9ms)
