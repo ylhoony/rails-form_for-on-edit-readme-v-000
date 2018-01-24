@@ -1205,3 +1205,11 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 24.84.40.63 at 2018-01-24 13:38:47 +0000
+
+
+Started GET "/posts/5/edit" for 24.84.40.63 at 2018-01-24 13:42:40 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 21.3ms | ActiveRecord: 1.3ms)
